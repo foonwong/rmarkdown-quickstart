@@ -10,7 +10,7 @@ Rmarkdown is a wonderful way to generate high quality reports for all your R pro
 
 
 #### Quick start
-- Follow the wizard to create a new document.  
+- Follow the wizard to create a new document.    
 ```{r, fig.retina=NULL, out.width=250, echo=FALSE}
 knitr::include_graphics('newfile.png')
 ```
@@ -49,7 +49,7 @@ If you are totally foreign to rmarkdown. Check out Rstudio's great tutorial and 
 pdf documents are typesetted using LaTeX. Installation links:  
 - [MikTex](https://miktex.org/download) (Windows) Download the "net installer" and choose complete installation (Large file!).
 
-- [MacTex](https://tug.org/mactex/mactex-download.html)
+- [MacTex](https://tug.org/mactex/mactex-download.html) (Mac).
 
 - If you need to use LaTeX packages, modify your YAML like so:
 

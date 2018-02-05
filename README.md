@@ -43,7 +43,7 @@ Rmarkdown is a wonderful way to generate high quality reports for all your R pro
 pdf documents are typesetted using LaTeX. Installation links:
 - [MikTex](https://miktex.org/download) (Windows) Download the "net installer" and choose complete installation (Large file!).
 
--   [MacTex](https://tug.org/mactex/mactex-download.html)
+-   [MacTex](https://tug.org/mactex/mactex-download.html) (Mac).
 
 -   If you need to use LaTeX packages, modify your YAML like so:
 
