@@ -5,47 +5,92 @@ date: "January 31, 2018"
 output: github_document
 ---
 
-### Introduction
-Rmarkdown is a wonderful way to generate high quality reports for all your R projects.  
-
-There are many great resources on the web. In this document, you will find links to those resources and helpful tips to get started.
-
-### Motivation
-This page you are seeing was created using knitr() built in to the lastest Rstudio. This is an example of a special markdown document that display nciely on GitHub. This is a great way of sharing information without hosting your own site.
-
-You can also create interactive pages in html.
-
-In addition, you can create beautifully typesetted documents without learning LaTeX.
+#### Introduction
+Rmarkdown is a wonderful way to generate high quality reports for all your R projects.  Here's some resources and tips to help you get started.
 
 
-### Structure
-A R markdown document consists of the following components:  
-1. *YAML header* in which you can specify your document metadata and output format. 
+#### Quick start
+- Follow the wizard to create a new document.  
+```{r, fig.retina=NULL, out.width=250, echo=FALSE}
+knitr::include_graphics('newfile.png')
+```
 
-2. *Text* written in markdown, which can be easily converted into other formats: html, pdf, word documents and etc. The syntax is simple and you can learn all the basics in 5 minutes.  
+- The default new file explains the structure. 
+1. *YAML header* in which you can specify your document metadata, output format and other global options.
 
-3. *R code chunks* and output. You have great control on how your code is formatted in between your text.
+2. *Text* written in markdown, which will be automatically converted into other formats: html, pdf, word documents and etc. The syntax is simple and you can learn all the basics in 5 minutes. 
 
+3. *R code chunks* and output. R code can be easily inserted between text, or written in chunks. Code chunks are individually executable.
 
-### Resources and links
+```{r, fig.retina=NULL, out.width=600, echo=FALSE}
+knitr::include_graphics('default.png')
+```
+
+- Hit **Ctrl + Alt + K** to knit or render your document. Easy!
+
+#### Resources and links
+- [Using R Markdown for Class Reports](http://www.stat.cmu.edu/~cshalizi/rmarkdown/): Fantastic guide by Cosma Shalizi. Must read. I am referencing it as I am writing this now.
+
 - [Official introduction](http://rmarkdown.rstudio.com/lesson-1.html): 
-Rstudio has great tutorial and examples. See what it can do!
+If you are totally foreign to rmarkdown. Check out Rstudio's great tutorial and examples. 
 
 - [Official cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)  
 
-- [Markdown live preview](http://markdownlivepreview.com/): there's no better way of learning than by experimenting. See instantaneously how the markdown syntax works.
+- [Markdown live preview](http://markdownlivepreview.com/): A quick way to understand how to write markdown if you have never written markdown before. See instantaneously how the markdown syntax works. It's also a great tool for troubleshooting.
+
+- [ShareLaTeX](https://www.sharelatex.com/): While rstudio does preview for LaTeX math, it's really better to edit LaTeX code with purpose built tools.
+
+- [KableExtra](https://haozhu233.github.io/kableExtra/): awesome styling options for your tables.
 
 
-### Useful hotkeys (windows)
-**Ctrl + Shift + K**: knits the text file to your desired output format.
-**Ctrl + Alt + I**: Inserts a r code chunk.
 
-### Software depedencies
+
 #### pdf documents
-- [MikTex](https://miktex.org/download). Windows. Download the "net installer" and choose complete installation (Large file!).
+pdf documents are typesetted using LaTeX. Installation links:  
+- [MikTex](https://miktex.org/download) (Windows) Download the "net installer" and choose complete installation (Large file!).
+
+- [MacTex](https://tug.org/mactex/mactex-download.html)
+
+- If you need to use LaTeX packages, modify your YAML like so:
+
+```
+---
+title: 'Homework I (Part II)'
+author: "Foon Wong"
+date: "February 4, 2018"
+output: pdf_document
+header-includes:
+- \usepackage{amsmath}
+- \usepackage{amssymb}
+---
+```
+
+#### LaTeX Math
+Rmarkdown has support for a lot of LaTeX commands. Just like a regular TeX document, you can have:  
+- inline math: surround your LaTeX code with a pair of `$`.  
+- Longer blocks of math: write between `\[` and `\]`.
+
+#### Practical Tips
+- Organize your document using headers. The character `#` means the rest of the line is interpreted as a header. This allows you to quickly jump to (**Shift + Alt + J**) and hide (**Alt + O**) different sections of your document.
+
+```{r, fig.retina=NULL, out.width=400, echo=FALSE}
+knitr::include_graphics('navigation.png')
+```
+
+- Name your code chunks. Facilitates navigation and troubleshooting.
+
+- Use the packages kable and kableExtra to format your tables. It can do some really cool things in html.
+
+- Starting a new line. Don't forget to end your line with two spaces.
+
+- LaTeX Math: LaTeX rendering can be very sensitive to spacing. If you have newlines in between `$'s, it may break. 
+
+#### Useful hotkeys 
+**Ctrl + Shift + K**: knits the text file to your desired output format.  
+**Ctrl + Alt + I (OS X: Cmd + Option + I)**: Inserts a r code chunk.  
+**Ctrl + Shift + Enter**: Execute a code chunk.  
+**Shift + Alt + J**: Navigation.
 
 
-### Where to get help
-
-### Beginner tips
-- R markdown does not insert a line break even if you have a new line on your text file. If you want a line break, you must type two spaces at the end of the line.
+#### Where to get help
+[StackOverflow](https://stackoverflow.com/)
