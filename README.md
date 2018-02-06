@@ -8,6 +8,8 @@ January 31, 2018
     -   [Document structure](#document-structure)
     -   [How it works](#how-it-works)
 -   [Resources and links](#resources-and-links)
+    -   [R Markdown](#r-markdown)
+    -   [LaTeX](#latex)
 -   [pdf and LaTeX](#pdf-and-latex)
     -   [Software prerequisites](#software-prerequisites)
     -   [Using LaTeX packages](#using-latex-packages)
@@ -55,6 +57,8 @@ The knit command processes the .rmd file using knitr(). All the code is executed
 Resources and links
 -------------------
 
+#### R Markdown
+
 -   [Using R Markdown for Class Reports](http://www.stat.cmu.edu/~cshalizi/rmarkdown/): Fantastic guide by Cosma Shalizi. Must read. I am referencing it as I am writing this now.
 
 -   [Official introduction](http://rmarkdown.rstudio.com/lesson-1.html): If you are totally foreign to rmarkdown. Check out Rstudio's great tutorial and examples.
@@ -63,11 +67,15 @@ Resources and links
 
 -   [Markdown live preview](http://markdownlivepreview.com/): A quick way to understand how to write markdown if you have never written markdown before. See instantaneously how the markdown syntax works. It's also a great tool for troubleshooting.
 
+-   [KableExtra](https://haozhu233.github.io/kableExtra/): awesome styling options for your tables.
+
+#### LaTeX
+
 -   [ShareLaTeX](https://www.sharelatex.com/): While rstudio does preview for LaTeX math, it's really better to edit LaTeX code with purpose built tools.
 
 -   [LaTeX-Tutorial.com](https://www.latex-tutorial.com/): An introduction to LaTeX.
 
--   [KableExtra](https://haozhu233.github.io/kableExtra/): awesome styling options for your tables.
+-   [AMS Short Math Guide for LaTeX](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf): For full control over your mathematical notation, be sure to check out this guide from the American Mathematical Society.
 
 pdf and LaTeX
 -------------
@@ -97,16 +105,19 @@ pdf documents are typesetted using LaTeX. Installation links:
 
 #### Math
 
-Rmarkdown has support for a lot of LaTeX commands. Just like a regular TeX document, you can have:
-- inline math: surround your LaTeX code with a pair of `$`.
-- Longer blocks of math: write between `\[` and `\]`.
+-   Rmarkdown has support for a lot of LaTeX commands. Just like a regular TeX document, you can have:
+
+    -   inline math: surround your LaTeX code with a pair of `$`.
+    -   Longer blocks of math: write between `\[` and `\]`.
+
+-   In addition, I recommend using the extensions published by the American Mathematical Society: `amssymb` and `amsmath`. See the [short guide here](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf).
 
 Practical Tips
 --------------
 
 #### Global options
 
-You can apply [options](https://yihui.name/knitr/options/) to your code chunks globally. I typically add the following in as my first code chunk:
+You can apply [options](https://yihui.name/knitr/options/) to your code chunks globally. I typically use the following in my first code chunk:
 
 ``` r
 # Hides all code except for output
@@ -123,7 +134,7 @@ knitr::opts_chunk$set(echo = F)
 
 #### Tables
 
--   Use the packages [kable](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) and kableExtra to format your tables. It can do some really cool things in html.
+-   Use the packages kable and [kableExtra](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) to format your tables. It can do some really cool things in html.
 
 #### Common problems
 
