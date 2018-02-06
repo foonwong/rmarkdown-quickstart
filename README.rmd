@@ -16,11 +16,12 @@ knitr::include_graphics('newfile.png')
 ```
 
 - The default new file explains the structure. 
-1. *YAML header* in which you can specify your document metadata, output format and other global options.
+1. *YAML header* in which you can specify your document metadata, output [formats](http://rmarkdown.rstudio.com/formats.html) and other global options.
 
-2. *Text* written in markdown, which will be automatically converted into other formats: html, pdf, word documents and etc. The syntax is simple and you can learn all the basics in 5 minutes. 
+2. [Text](http://www.stat.cmu.edu/~cshalizi/rmarkdown/#basic-formatting-in-r-markdown) written in markdown, which will be automatically converted into other formats: html, pdf, word documents and etc. The syntax is simple and you can learn all the basics in 5 minutes. 
 
-3. *R code chunks* and output. R code can be easily inserted between text, or written in chunks. Code chunks are individually executable.
+3. [R code chunks](http://www.stat.cmu.edu/~cshalizi/rmarkdown/#including-code) (**Ctrl + Alt + I **) R code can be easily inserted inline, or written in chunks. All code written in the chunks are executed when you knit the file. By default, both the code and output is displayed. 
+
 
 ```{r, fig.retina=NULL, out.width=600, echo=FALSE}
 knitr::include_graphics('default.png')
@@ -87,9 +88,9 @@ knitr::include_graphics('navigation.png')
 
 #### Useful hotkeys 
 **Ctrl + Shift + K**: knits the text file to your desired output format.  
-**Ctrl + Alt + I (OS X: Cmd + Option + I)**: Inserts a r code chunk.  
-**Ctrl + Shift + Enter**: Execute a code chunk.  
-**Shift + Alt + J**: Navigation.
+**Ctrl + Alt + I (OS X: Cmd + Option + I)**: Inserts a r code chunk.    
+**Ctrl + Shift + Enter**: Execute a code chunk.   
+**Shift + Alt + J**: Navigation.  
 
 
 #### Where to get help
