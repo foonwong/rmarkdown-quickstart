@@ -133,10 +133,10 @@ knitr::opts_chunk$set(echo = F)
 
 #### Hotkeys
 
-**Ctrl + Shift + K**: knits the text file to your desired output format.
-**Ctrl + Alt + I (OS X: Cmd + Option + I)**: Inserts a r code chunk.
-**Ctrl + Shift + Enter**: Execute a code chunk.
-**Shift + Alt + J**: Navigation.
+-   **Ctrl + Shift + K**: knits the text file to your desired output format.
+-   **Ctrl + Alt + I (OS X: Cmd + Option + I)**: Inserts a r code chunk.
+-   **Ctrl + Shift + Enter**: Execute a code chunk.
+-   **Shift + Alt + J**: Navigation.
 
 #### Finding help
 
