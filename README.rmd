@@ -2,7 +2,9 @@
 title: "R Markdown quickstart"
 author: "Foon Wong"
 date: "January 31, 2018"
-output: github_document
+output: 
+  github_document:
+    toc: true
 ---
 
 #### Introduction

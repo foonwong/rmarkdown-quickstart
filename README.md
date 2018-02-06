@@ -3,6 +3,15 @@ R Markdown quickstart
 Foon Wong
 January 31, 2018
 
+-   [Introduction](#introduction)
+-   [Quick start](#quick-start)
+-   [Resources and links](#resources-and-links)
+-   [pdf documents](#pdf-documents)
+-   [LaTeX Math](#latex-math)
+-   [Practical Tips](#practical-tips)
+-   [Useful hotkeys](#useful-hotkeys)
+-   [Where to get help](#where-to-get-help)
+
 #### Introduction
 
 Rmarkdown is a wonderful way to generate high quality reports for all your R projects. Here's some resources and tips to help you get started.
