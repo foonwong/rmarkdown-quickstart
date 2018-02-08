@@ -77,6 +77,8 @@ Resources and links
 
 -   [AMS Short Math Guide for LaTeX](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf): For full control over your mathematical notation, be sure to check out this guide from the American Mathematical Society.
 
+-   [excel2LaTeX](http://excel2latex.com/): Pretty handy for making a quick table.
+
 pdf and LaTeX
 -------------
 
@@ -135,6 +137,8 @@ knitr::opts_chunk$set(echo = F)
 #### Tables
 
 -   Use the packages kable and [kableExtra](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) to format your tables. It can do some really cool things in html.
+
+-   [excel2LaTeX](http://excel2latex.com/): Pretty handy for making a quick table.
 
 #### Common problems
 
