@@ -127,6 +127,8 @@ knitr::include_graphics('navigation.png')
 
 - [math expressions in kable](https://stackoverflow.com/questions/45391566/latex-math-expression-in-knitr-kable-sweave): Use option `escape=FALSE` in kable.
 
+- [Get rid of \\addlinespace in kable](https://stackoverflow.com/questions/45409750/get-rid-of-addlinespace-in-kable): overwrites the default extra spacing every 5th row when using booktab.
+
 #### Common problems
 
 - [Newline doesn't start](http://www.stat.cmu.edu/~cshalizi/rmarkdown/#paragraph-breaks-and-forced-line-breaks) - paragraph breaks need a completely blank line. Forced line breaks require **two** blanks spaces at the end of the line.
