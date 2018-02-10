@@ -140,6 +140,8 @@ knitr::opts_chunk$set(echo = F)
 
 -   [excel2LaTeX](http://excel2latex.com/): Pretty handy for making a quick table.
 
+-   [math expressions in kable](https://stackoverflow.com/questions/45391566/latex-math-expression-in-knitr-kable-sweave): Use option `escape=FALSE` in kable.
+
 #### Common problems
 
 -   [Newline doesn't start](http://www.stat.cmu.edu/~cshalizi/rmarkdown/#paragraph-breaks-and-forced-line-breaks) - paragraph breaks need a completely blank line. Forced line breaks require **two** blanks spaces at the end of the line.
