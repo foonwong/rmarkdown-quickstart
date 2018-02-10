@@ -89,6 +89,8 @@ pdf documents are typesetted using LaTeX. Installation links:
 
 -   [MacTex](https://tug.org/mactex/mactex-download.html) (Mac).
 
+-   [TexLive](https://www.tug.org/texlive/acquire-netinstall.html) (Linux): Download install-tl-unx.tar.gz and run `install-tl`.
+
 #### Using LaTeX packages
 
 -   If you need to use LaTeX packages, modify your YAML like so:
